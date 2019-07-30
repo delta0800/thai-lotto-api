@@ -39,11 +39,11 @@ function getData(url, res) {
     ).each((i, elem) => {
       prizeSecond.push($(elem).text())
     })
-    let prizeThrid = []
+    let prizeThird = []
     $(
       '#contentPrint > div.lottocheck__resize > div:nth-child(3) > div:nth-child(2) > span.lotto__number',
     ).each((i, elem) => {
-      prizeThrid.push($(elem).text())
+      prizeThird.push($(elem).text())
     })
     let prizeForth = []
     $(
@@ -105,11 +105,11 @@ function getData(url, res) {
             number: prizeSecond,
           },
           {
-            id: 'prizeThrid',
+            id: 'prizeThird',
             name: 'รางวัลที่ 3',
             reward: '80000',
-            amount: prizeThrid.length,
-            number: prizeThrid,
+            amount: prizeThird.length,
+            number: prizeThird,
           },
           {
             id: 'prizeForth',
